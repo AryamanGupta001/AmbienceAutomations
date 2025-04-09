@@ -1,4 +1,6 @@
 const CONTACT_INFO = {
-  email: "contact@ambience.com",
-  phone: "+91-00000-00000"
+  email1: "contact@ambience.com",
+  email2: "support@ambience.com",
+  phone: "+91-0000000000",
+  address: "Industrial Area, Mohali, Punjab"
 };
