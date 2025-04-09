@@ -13,7 +13,7 @@ This is a front-end project for **Ambience Automations**, showcasing interactive
 - `script.js` – Interactive functionality
 
 ## Author
-Aryan
+Aryaman
 
 ## License
 This project is for learning and documentation purposes. Not licensed for commercial use.
