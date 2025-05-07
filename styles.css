@@ -92,6 +92,18 @@ nav {
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  animation: fadeInDown 1.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-content p {
@@ -111,6 +123,9 @@ nav {
 
 .cta-button:hover {
   background-color: #0056b3;
+  color: #fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 
 /* About Section */
@@ -164,6 +179,11 @@ nav {
   border-radius: 5px;
 }
 
+.product-item img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 /* Product Videos */
 .product-item video {
   width: 100%;
@@ -180,6 +200,19 @@ nav {
 
 .product-item p {
   margin-bottom: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.testimonial {
+  margin: 1rem auto;
+  max-width: 600px;
+  font-style: italic;
 }
 
 /* Contact Section */
@@ -256,6 +289,27 @@ footer {
   background-color: #007bff;
   color: white;
   text-align: center;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  background-color: #0056b3;
 }
 
 /* Responsive Design */
