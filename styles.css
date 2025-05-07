@@ -159,9 +159,18 @@ nav {
 
 .product-item img {
   width: 100%;
-  height: 200px;
+  height: auto; /* Maintain aspect ratio */
   object-fit: cover;
   border-radius: 5px;
+}
+
+/* Product Videos */
+.product-item video {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: block;
 }
 
 .product-item h3 {
@@ -266,6 +275,11 @@ footer {
   
   .product-grid {
     grid-template-columns: 1fr;
+  }
+
+  .product-item video {
+    height: auto;
+    max-height: 200px; /* Limit height for smaller screens */
   }
 }
 

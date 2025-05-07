@@ -27,3 +27,37 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     alert('Please enter a valid email address.');
   }
 });
+
+// Dynamically load product videos
+const products = [
+  {
+    img: "Industrial_UPS.png",
+    title: "Industrial Inverter UPS",
+    description: "90% efficiency under load. Reliable power for industrial settings.",
+    video: "videos/industrial-ups-demo.mp4",
+  },
+  {
+    img: "EV_Charger.png",
+    title: "EV Charger",
+    description: "Fast-charging and compatible with various models for future mobility.",
+    video: "videos/ev-charger-demo.mp4",
+  },
+];
+
+const productGrid = document.querySelector(".product-grid");
+products.forEach((product) => {
+  const productItem = document.createElement("div");
+  productItem.classList.add("product-item");
+
+  productItem.innerHTML = `
+    <img src="${product.img}" alt="${product.title}" />
+    <h3>${product.title}</h3>
+    <p>${product.description}</p>
+    <video controls>
+      <source src="${product.video}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  `;
+
+  productGrid.appendChild(productItem);
+});
