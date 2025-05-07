@@ -1,2 +1,25 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Config files
 config.js
-updates-journal.txt
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Images and videos (if not needed in the repo)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+
+# IDE-specific files
+.vscode/
